@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+*{
+    font-family: 'Bebas Neue', sans-serif;  
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://w7.pngwing.com/pngs/771/309/png-transparent-rose-seamless-background-thumbnail.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(255, 192, 203);
+}
+/* empieza la nav */
+/* nav{
+    background-color: rgb(255, 192, 203);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    padding: 6px 30px;
+    
+}
+
+    nav ul{
+       text-align: center;
+       font-size: 1.1em; 
+       display: flex;
+       margin-left: 2.4em;
+    
+
+    }
+       nav ul li{
+           list-style-type: none;
+           display: flex;
+           padding: 10px;
+           margin-right: 1.5em;
+           margin-right: 1.5em;
+       }
+
+       ul li a{
+           color: black;
+           display: flex;
+         }
+
+         ul li a:hover{
+             color: white;
+            } */
+            /*img del header  */
+            
+ header img{
+    width: 100%;
+    max-height: auto;
+    object-fit: cover;
+
+}
+ .botonera{
+    background-color: rgb(255, 192, 203);
+}
+      .botonera a{
+            color: black;
+       }
+         .botonera a:hover{
+            color: white;
+         }
+         .font-sizetitle{
+             font-size: 3em;
+    }
+/* empieza main */
+main{
+    padding: 20px 30px;
+    }
+    
+    .imgproductos{
+        width: 20%; 
+    }
+    .img{
+        width: 30;
+    }
+    
+    h1,h2,h3,form label{
+        display: block;
+        margin-top: 10px;
+    }
+    
+    section main h2{
+        color:black;
+        width: 40vw;
+        margin-left: 30vw;
+        border-style: dotted;
+    } 
+    h3{
+        background-color: rgba(255, 192, 203, 0.5);
+        margin-bottom: 10px;
+    }
+    
+    p{
+        font-family: 'Poppins', sans-serif;
+    }
+    /*titulo de productos destacados  */
+    .destacados{
+        background-color:white;
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+    /* figures de productos */
+    .productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }  
+    .productos figure{
+        width: 30%;
+        border: double gray 1px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        padding: 30px;
+        background-color: white;
+    
+    }
+       .productos figcaption{
+           background-color: rgba(255, 192, 203, 0.5);
+           color: black;
+              font-size: 1.4em;
+              text-align: center;
+              margin-bottom: 1em;
+            }
+        .productos img{
+              width: 70%;
+              height: auto;
+              justify-content: center;
+              margin-left: 4vw;
+              object-fit: cover;
+    
+              }
+        .productos figure p{
+            font-size: 1em;
+            line-height: 1.6em;
+                  margin-bottom: 20px;
+                }
+                .productos figure button{
+                     border: none;
+                     padding: 6px 30px;
+                     background-color: rgb(255, 192, 203);
+                     color: rgb(250, 236, 236);
+                     text-align: center;
+                     width: 70%;
+                   }
+
+                   /* clases para editar textos */
+    
+ .text-aligneR{
+     text-align: right;
+    }
+    .text-aligneL{
+        text-align: left;
+    }
+.text-aligneC{
+    text-align: center;
+}
+
+.backround-black{
+    background-color: rgb(241, 200, 200);
+}
+
+/* empieza footer */
+footer{
+    background-color: rgb(255, 192, 203);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer svg{
+    width: 30px;
+    height: 30px;
+        fill: black;
+        background-color: rgb(255, 192, 203);
+        
+    }
+   footer ul{
+       list-style: none;
+    }
+    footer ul li a{
+        color: black;
+        font-size: 1em;
+    }
+    
+    /* section que tine h1 y p en index */
+    .contenedor{
+        background-color: rgba(255, 192, 203, 0.5);
+        width: 100%;
+        height: auto;
+        padding: 2px 1px;
+        border-width: 10px 20px;
+        margin-bottom: 2vw;
+    }
+    /* pag contacto */
+    .contacto-form{
+        padding: 2px;
+        margin: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        
+    }
+    /* pag promos */
+    .promos-table{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    /* pag nosotros */
+.ubicacion{
+    margin-left: 3em;
+}
+ /* inicia responsive */
+@media (width < 768px ){
+    
+    .productos figure{
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer div:nth-child(2){
+        margin: 10px 0;
+    }
+    figure img{
+        object-fit: cover;
+       }
+}
